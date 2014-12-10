@@ -43,13 +43,20 @@
         self.isFastLane=@"";
     
     }
-   
     
     if(service.translation)
     {
         self.translation = [Util convertJSONToObject: [Validator getSafeString:service.translation]];
     }
     
+}
+
+-(void)setDescription:(NSString *)description{
+    _des = description;
+}
+
+-(NSString*)description{
+    return _des;
 }
 
 @end

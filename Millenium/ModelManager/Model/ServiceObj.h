@@ -14,7 +14,7 @@
 
 @property(retain,nonatomic) NSString *categoryId;
 @property(retain,nonatomic) NSString *categoryName;
-@property(retain,nonatomic) NSString *description;
+@property(retain,nonatomic) NSString *des;
 @property(retain,nonatomic) NSString *image;
 @property(retain,nonatomic) NSString *type;
 @property(retain,nonatomic) NSString *parentId;
@@ -27,5 +27,7 @@
 
 -(void)copyFromService:(Service*)service;
 -(void)copyFromProduct:(Collection*)collection;
+-(void)setDescription:(NSString *)description;
+-(NSString*)description;
 
 @end

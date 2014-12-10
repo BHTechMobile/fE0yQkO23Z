@@ -13,7 +13,7 @@
 
 @property(retain,nonatomic) NSString *productName;
 @property(retain,nonatomic) NSString *collectionId;
-@property(retain,nonatomic) NSString *description;
+@property(retain,nonatomic) NSString *des;
 @property(retain,nonatomic) NSMutableArray *arrImage;
 @property(retain,nonatomic) NSDictionary *translate;
 @property(retain,nonatomic) NSString* lang;
@@ -22,5 +22,7 @@
 @property(retain,nonatomic) NSString *price;
 
 -(void)copyFromProduct:(Product*)product;
+-(void)setDescription:(NSString *)description;
+-(NSString*)description;
 
 @end

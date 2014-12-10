@@ -18,7 +18,7 @@
 @property(retain,nonatomic) NSString *imageUrl;
 @property(retain,nonatomic) NSString *email;
 @property(retain,nonatomic) NSString *tranlation;
-@property(retain,nonatomic) NSString *description;
+@property(retain,nonatomic) NSString *des;
 
 
 @property(nonatomic) float  latitude;
@@ -27,5 +27,7 @@
 
 -(id)initWithId:(NSString*)dealerId name:(NSString*)dealName address:(NSString*)dealAddress andPhone:(NSString*)dealPhone;
 -(void)copyFromDealer:(Dealer*)dealer;
+-(void)setDescription:(NSString *)description;
+-(NSString*)description;
 
 @end

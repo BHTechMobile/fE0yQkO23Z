@@ -38,4 +38,13 @@
     
 }
 
+-(void)setDescription:(NSString *)description{
+    _des = description;
+}
+
+-(NSString*)description{
+    return _des;
+}
+
+
 @end

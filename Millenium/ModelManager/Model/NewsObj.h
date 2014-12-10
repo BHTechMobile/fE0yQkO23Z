@@ -18,12 +18,14 @@
 @property(retain,nonatomic) NSString *imageUrl;
 @property(retain,nonatomic) NSString *videoUrl;
 @property(retain,nonatomic) NSString *shortDescription;
-@property(retain,nonatomic) NSString *description;
+@property(retain,nonatomic) NSString *des;
 @property(retain,nonatomic) NSString * lang;
 @property(retain,nonatomic) NSDictionary *tranlation;
 @property(retain,nonatomic) NSString *createdTime;
 @property(retain,nonatomic) NSString *updatedTime;
 
 -(void)copyFromNews:(News*)news;
+-(void)setDescription:(NSString *)description;
+-(NSString*)description;
 
 @end
