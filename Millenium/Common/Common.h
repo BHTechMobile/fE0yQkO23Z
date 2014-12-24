@@ -20,6 +20,10 @@
 //#define IMAGE_BASE_URL            @"http://minii.asia/mlapp/"
 #define BASE_URL                  @"http://mgcmobileapp.mgc-asia.com/en/api/"
 #define IMAGE_BASE_URL            @"http://mgcmobileapp.mgc-asia.com/"
+
+//#define BASE_URL                  @"http://117.7.238.88:8240/bmw/en/api/"
+//#define IMAGE_BASE_URL            @"http://117.7.238.88:8240/bmw/"
+
 #define URL_GET_INIT              @"getInit"
 #define URL_LOGIN                 @"login"
 #define URL_REGISTER              @"register"

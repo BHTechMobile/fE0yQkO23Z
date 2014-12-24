@@ -136,7 +136,7 @@
     if(car_id && gArrMyCar)
     {
         VehicleObj* obj = [ModelManager getVehicleById:car_id];
-        NSString* vehicleStr = [NSString stringWithFormat:@"%@ %@",obj.VINNumber,obj.vehicleModel];
+        NSString* vehicleStr = [NSString stringWithFormat:@"%@ %@",obj.vehicleModel,obj.plateNumber];
         lblDefaultVehicle.text = [self stringByRemoveMillenium:vehicleStr];
         
     }

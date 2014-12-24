@@ -869,9 +869,7 @@
     
     [request setRequestMethod:@"POST"];
     [request setPostValue:memberId forKey:@"memberId"];
-#warning We remove the VIN number completely so it should be a null string at vinNumber value
-    [request setPostValue:@"" forKey:@"VIN"];
-//    [request setPostValue:vinNumber forKey:@"VIN"];
+    [request setPostValue:vinNumber forKey:@"VIN"];
     [request setPostValue:licensePlate forKey:@"license_plate"];
     [request setPostValue:vehicelModel forKey:@"model_description"];
     

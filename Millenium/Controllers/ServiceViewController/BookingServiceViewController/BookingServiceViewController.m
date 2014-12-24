@@ -383,7 +383,8 @@
     {
         VehicleObj* obj = [ModelManager getVehicleById:car_id];
         self.selectedVehicle = obj;
-        NSString* vehicleStr = [NSString stringWithFormat:@"%@ %@",obj.VINNumber,obj.vehicleModel];
+//        NSString* vehicleStr = [NSString stringWithFormat:@"%@ %@",obj.VINNumber,obj.vehicleModel];
+        NSString* vehicleStr = [NSString stringWithFormat:@"%@ %@",obj.vehicleModel,obj.plateNumber];
         _vehicleLbl.text = [self stringByRemoveMillenium:vehicleStr];
         
     }

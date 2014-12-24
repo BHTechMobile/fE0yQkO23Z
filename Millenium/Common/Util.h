@@ -67,5 +67,5 @@
 +(UIFont*)customBoldFontWithSize:(float)size;
 +(UIFont*)customLigthWithSize:(float)size;
 +(BOOL)canDevicePlaceAPhoneCall ;
-
++(NSString*)generateRandomString:(int)len;
 @end

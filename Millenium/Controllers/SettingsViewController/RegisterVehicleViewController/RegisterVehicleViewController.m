@@ -240,7 +240,7 @@
             
             //Add new car for an exist member
             
-            [ModelManager addCar:memberId vinNumber:txtVINNumber.text licensePlate:txtLicensePlateNumber.text andVehicleModel:txtVehicleModel.text  withSuccess:^(NSDictionary *jsonDic) {
+            [ModelManager addCar:memberId vinNumber:[Util generateRandomString:7] licensePlate:txtLicensePlateNumber.text andVehicleModel:txtVehicleModel.text  withSuccess:^(NSDictionary *jsonDic) {
                 
                 
                 if(![jsonDic valueForKey:@"ok"])
@@ -282,7 +282,7 @@
             NSString* pushId = [Validator getSafeString:[Util valueForKey:MyToken]];
             NSLog(@">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>device token:%@",pushId);
             if([pushId isEqualToString:@""]) pushId = @"a";
-            [ModelManager registerWithName:_name email:_email phone:_tel vinNumber:txtVINNumber.text licensePlate:txtLicensePlateNumber.text andVehicleModel:txtVehicleModel.text pushId:pushId osType:@"ios" withSuccess:^(NSDictionary *jsonDic) {
+            [ModelManager registerWithName:_name email:_email phone:_tel vinNumber:[Util generateRandomString:7] licensePlate:txtLicensePlateNumber.text andVehicleModel:txtVehicleModel.text pushId:pushId osType:@"ios" withSuccess:^(NSDictionary *jsonDic) {
                 
                 STOP_LOADING;
                 if(![jsonDic valueForKey:@"ok"])
